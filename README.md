@@ -11,14 +11,14 @@ The first paragraph of the first header is considered the description.
 ``` yaml
 steps:
   -
-    name: Checkout repository
+    name: 'Checkout repository'
     uses: actions/checkout@v4
   -
-    name: Get README description
+    name: 'Get README description'
     id: get-description
-    uses: rtvu/get-description-from-readme-action@v1.0.0
+    uses: rtvu/get-description-from-readme-action@v1.0.1
   -
-    name: Echo description
+    name: 'Echo description'
     run: echo ${{ steps.get-description.outputs.description }}
 ```
 

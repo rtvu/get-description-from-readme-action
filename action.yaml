@@ -21,7 +21,7 @@ runs:
   using: 'composite'
   steps:
     -
-      name: Get description
+      name: 'Get description'
       id: get-description
       shell: python3 -u {0} ${{ inputs.readme }}
       run: |
