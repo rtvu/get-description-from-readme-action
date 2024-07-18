@@ -16,7 +16,7 @@ steps:
   -
     name: 'Get README description'
     id: get-description
-    uses: rtvu/get-description-from-readme-action@v1.0.1
+    uses: rtvu/get-description-from-readme-action@v1
   -
     name: 'Echo description'
     run: echo ${{ steps.get-description.outputs.description }}

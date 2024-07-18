@@ -9,7 +9,6 @@ branding:
 inputs:
   readme:
     description: 'Path to README'
-    required: false
     default: 'README.md'
 
 outputs:
